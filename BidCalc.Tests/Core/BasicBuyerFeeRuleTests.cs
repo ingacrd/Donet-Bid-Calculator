@@ -13,7 +13,7 @@ public class BasicBuyerFeeRuleTests
 
     // Luxury: 10% with min 25, max 200
     [InlineData(100, VehicleType.Luxury, 25)]       
-    [InlineData(1400, VehicleType.Luxury, 180)]      
+    [InlineData(1400, VehicleType.Luxury, 140)]      
     [InlineData(1000000, VehicleType.Luxury, 200)]   
     public void Computes_basic_buyer_fee_with_caps(decimal price, VehicleType type, decimal expected)
     {
