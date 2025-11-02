@@ -1,7 +1,9 @@
 namespace BidCalc.Core;
 
-public class BasicBuyerFeeRule
+public class BasicBuyerFeeRule : IFeeRule
 {
+
+    public string Name { get; } = "Basic buyer fee";
     public decimal Compute(decimal basePrice, VehicleType type)
     {
         var baseFee = basePrice * 0.10m;

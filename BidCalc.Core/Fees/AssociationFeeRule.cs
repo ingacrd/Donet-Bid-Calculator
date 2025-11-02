@@ -1,8 +1,9 @@
 namespace BidCalc.Core;
 
-public sealed class AssociationFeeRule
+public class AssociationFeeRule : IFeeRule
 {
-    public decimal Compute(decimal basePrice)
+    public string Name { get; } = "Association fee";
+    public decimal Compute(decimal basePrice, VehicleType type)
     {
         if (basePrice <= 500m) return 5m;
         if (basePrice <= 1000m) return 10m;

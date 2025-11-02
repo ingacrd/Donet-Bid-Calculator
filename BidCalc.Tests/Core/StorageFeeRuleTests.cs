@@ -9,6 +9,6 @@ public class StorageFeeRuleTests
     [InlineData(3000)]
     public void Always_100(decimal price)
     {
-        new StorageFeeRule().Compute(price).Should().Be(100m);
+        new StorageFeeRule().Compute(price, VehicleType.Common).Should().Be(100m);
     }
 }
