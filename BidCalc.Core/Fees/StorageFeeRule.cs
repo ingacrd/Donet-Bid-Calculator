@@ -4,6 +4,6 @@ public sealed class StorageFeeRule
 {
     public decimal Compute(decimal basePrice)
     {
-        return 0;
+        return 100m;
     }
 }
