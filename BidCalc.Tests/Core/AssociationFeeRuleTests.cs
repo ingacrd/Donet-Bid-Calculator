@@ -15,6 +15,6 @@ public class AssociationFeeRuleTests
     [InlineData(3000.01, 20)]
     public void Returns_flat_fee_by_price_range(decimal price, decimal expected)
     {
-        _rule.Compute(price).Should().Be(expected);
+        _rule.Compute(price, VehicleType.Common).Should().Be(expected);
     }
 }

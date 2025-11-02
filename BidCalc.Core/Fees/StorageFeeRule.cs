@@ -1,8 +1,9 @@
 namespace BidCalc.Core;
 
-public sealed class StorageFeeRule
+public class StorageFeeRule : IFeeRule
 {
-    public decimal Compute(decimal basePrice)
+    public string Name { get; } = "Storage fee";
+    public decimal Compute(decimal basePrice, VehicleType type)
     {
         return 100m;
     }
