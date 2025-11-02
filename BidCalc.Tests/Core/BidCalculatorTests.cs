@@ -15,7 +15,7 @@ public class BidCalculatorTests
         decimal price, VehicleType type,
         decimal basic, decimal special, decimal association, decimal storage, decimal expectedTotal)
     {
-        var calc = new BidCalculator(new object[] {
+        var calc = new BidCalculator(new IFeeRule[] {
             new BasicBuyerFeeRule(), new SellersSpecialFeeRule(),
             new AssociationFeeRule(), new StorageFeeRule()
         });
