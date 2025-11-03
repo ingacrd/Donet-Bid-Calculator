@@ -1,6 +1,6 @@
 namespace BidCalc.Core;
 
-public class BidCalculator
+public class BidCalculator : IBidCalculator
 {
     private readonly IReadOnlyList<IFeeRule> _rules;
     public BidCalculator(IEnumerable<IFeeRule> rules)

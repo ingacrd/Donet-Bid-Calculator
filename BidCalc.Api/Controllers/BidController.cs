@@ -8,8 +8,8 @@ namespace BidCalc.Api.Controllers;
 [Route("api/[controller]")]
 public class BidController : ControllerBase
 {
-    private readonly BidCalculator _calculator;
-    public BidController(BidCalculator calculator)
+    private readonly IBidCalculator _calculator;
+    public BidController(IBidCalculator calculator)
     {
         _calculator = calculator;
     } 

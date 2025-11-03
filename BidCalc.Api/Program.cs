@@ -27,7 +27,7 @@ builder.Services.AddScoped<IFeeRule, BasicBuyerFeeRule>();
 builder.Services.AddScoped<IFeeRule, SellersSpecialFeeRule>();
 builder.Services.AddScoped<IFeeRule, AssociationFeeRule>();
 builder.Services.AddScoped<IFeeRule, StorageFeeRule>();
-builder.Services.AddScoped<BidCalculator>();
+builder.Services.AddScoped<IBidCalculator,BidCalculator>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
