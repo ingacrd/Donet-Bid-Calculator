@@ -34,13 +34,8 @@ The API exposes a single, focused endpoint that **calculates the final bid amoun
   - `BidCalc.Api` – HTTP API, DI, DTOs, CORS, Swagger
   - `BidCalc.Tests` – unit and API tests
 
-## Projects
-- `BidCalc.Api` – Web API (Swagger enabled in Development)
-- `BidCalc.Core` – Domain & calculation logic
-- `BidCalc.Tests` – Unit tests for Core
 
-
-## ▶️ Run locally
+## Run locally
 
 ### Requirements
 - .NET SDK 8.0+
@@ -61,7 +56,6 @@ dotnet restore
 dotnet build
 dotnet run --project .\BidCalc.Api\BidCalc.Api.csproj
 ```
-
 
 Open Swagger locally:
 
