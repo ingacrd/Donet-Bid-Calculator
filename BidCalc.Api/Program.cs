@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
                 "http://localhost:5173",  
                 "https://localhost:5173",
                 "https://bidcalculatorvue.netlify.app",
-                "https://bidreactcalc.netlify.app/"
+                "https://bidreactcalc.netlify.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
